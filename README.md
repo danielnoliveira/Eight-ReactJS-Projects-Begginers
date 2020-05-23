@@ -9,7 +9,7 @@ Repository to store my applications made in beginner level React JS.
 ## Projects
 - [Pokedex](https://github.com/danielnoliveira/Pokedex) :heavy_check_mark:
     - Netlifly Link:https://sleepy-pare-d66515.netlify.app/
-- [Stopwatch]()
+- [Stopwatch]():heavy_check_mark:
 - [Counter]()
 - [BMI Calculator]()
 - [Random Joke Generator]()
