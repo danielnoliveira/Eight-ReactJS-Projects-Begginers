@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: #52a6ff;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App__title{
+  text-transform: uppercase;
+  color: #31527c;
+  font-size: 4rem;
+  margin-top: -50px;
+}
