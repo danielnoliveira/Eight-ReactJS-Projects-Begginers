@@ -11,7 +11,8 @@ Repository to store my applications made in beginner level React JS.
     - Netlifly Link:https://sleepy-pare-d66515.netlify.app/
 - [Stopwatch](https://github.com/danielnoliveira/Eight-ReactJS-Projects-Begginers/tree/master/stopwatch):heavy_check_mark:
     - Netlifly Link:https://happy-clarke-cccb14.netlify.app
-- [Counter]()
+- [Counter](https://github.com/danielnoliveira/Eight-ReactJS-Projects-Begginers/tree/master/counter)
+    - Netlifly Link:https://cocky-engelbart-fdd1d0.netlify.app
 - [BMI Calculator]()
 - [Random Joke Generator]()
 - [Tic Tac Toe]()
