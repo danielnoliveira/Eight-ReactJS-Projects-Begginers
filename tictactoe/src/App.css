@@ -1,38 +1,100 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  background-color: #52a6ff;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App__header{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title{
+  color: #2a567f;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 6rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width:700px){
+  .header__title{
+    font-size: 3rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App__board{
+  padding: 10px 10px;
+  width: 356px;
+  height: 355px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  border: 3px solid #2a567f;
 }
-
-.App-link {
-  color: #61dafb;
+.board__square{
+  flex-basis: 110px;
+  height: 110px;
+  background: none;
+  border: none;
+  font-size: 90px;
+  color: #d6ffff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board__square:nth-child(1){
+  border-right: 3.5px solid #2a567f;
+  border-bottom: 3.5px solid #2a567f;
+}
+.board__square:nth-child(2){
+  border-left: 3.5px solid #2a567f;
+  border-right: 3.5px solid #2a567f;
+  border-bottom: 3.5px solid #2a567f;
+}
+.board__square:nth-child(3){
+  border-left: 3.5px solid #2a567f;
+  border-bottom: 3.5px solid #2a567f;
+}
+.board__square:nth-child(4){
+  border-top: 3.5px solid #2a567f;
+  border-right: 3.5px solid #2a567f;
+  border-bottom: 3.5px solid #2a567f;
+}
+.board__square:nth-child(5){
+  border: 3.5px solid #2a567f;
+}
+.board__square:nth-child(6){
+  border-top: 3.5px solid #2a567f;
+  border-left: 3.5px solid #2a567f;
+  border-bottom: 3.5px solid #2a567f;
+}
+.board__square:nth-child(7){
+  border-right: 3.5px solid #2a567f;
+  border-top: 3.5px solid #2a567f;
+}
+.board__square:nth-child(8){
+  border-right: 3.5px solid #2a567f;
+  border-top: 3.5px solid #2a567f;
+  border-left: 3.5px solid #2a567f;
+}
+.board__square:nth-child(9){
+  border-left: 3.5px solid #2a567f;
+  border-top: 3.5px solid #2a567f;
+}
+.result__text{
+  color: #d6ffff;
+}
+.App__turn{
+  margin-bottom: 8px;
+}
+.turn__text{
+  color: #d6ffff;
 }
