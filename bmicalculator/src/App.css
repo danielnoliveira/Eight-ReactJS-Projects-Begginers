@@ -17,7 +17,7 @@
   text-transform: uppercase;
   color: #31527c;
   font-size: 4rem;
-  margin-top: -120px;
+  margin-top: -10px;
 }
 @media (max-width:480px){
   .App__title {
@@ -62,7 +62,7 @@
   letter-spacing: 5px;
 }
 .App__result{
-  width: 30%;
+  width: 50%;
   margin: 10px auto;
   padding: 20px;
   color: #d6ffff;
