@@ -1,55 +1,81 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
+import { WiDayCloudyGusts,WiDayRain ,WiDaySunnyOvercast,WiSnowWind,WiNightRain,WiTornado,WiCloudy} from "react-icons/wi";
 import './App.css';
 
-// const api_key = "c62c2cfc553ebdc297732eb02f7f9d37";
+function App(){
 
-function App() {
-  const [geolocationUser, setLocationUser] = useState({latitude:'',longitude:''});
-  const getMyLocation = ()=>{
-    const location = window.navigator && window.navigator.geolocation;
-    var {latitude,longitude} = geolocationUser;
-    if (location) {
-      location.getCurrentPosition((position) => {
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-      }, (error) => {
-        setLocationUser({ latitude: 'err-latitude', longitude: 'err-longitude' })
-      })
-    }
-    setLocationUser({latitude,longitude},newState=>console.log(newState));
-    console.log(geolocationUser);
-  }
-  useEffect(getMyLocation,[]);
-  return (
-    <div className="App">
-      <header className="App__header">
-        <h1 className="header__title">weather app</h1>
-      </header>
-      <main className="App__monitor">
-        <section className="monitor__day">
-          <p className="day__name">mon</p>
-        </section>
-        <section className="monitor__day">
-         <p className="day__name">tue</p>
-        </section>
-        <section className="monitor__day">
-          <p className="day__name">wed</p>
-        </section>
-        <section className="monitor__day">
-          <p className="day__name">thu</p>
-        </section>
-        <section className="monitor__day">
-          <p className="day__name">fri</p>
-        </section>
-        <section className="monitor__day">
-         <p className="day__name">sat</p>
-        </section>
-        <section className="monitor__day">
-          <p className="day__name">sun</p>
-        </section>
-      </main>
-    </div>
-  );
+    return (
+      <div className="App">
+        <header className="App__header">
+    <h1 className="header__title">weather app</h1>
+        </header>
+        <main className="App__monitor">
+          <section className="monitor__day">
+            <p className="day__name">mon</p>
+            <div className="day__weather">
+              <WiDayRain />
+            </div>
+            <p className="day__temp">
+              20° C
+            </p>
+          </section>
+          <section className="monitor__day">
+            <p className="day__name">tue</p>
+            <div className="day__weather">
+              <WiDaySunnyOvercast />
+            </div>
+            <p className="day__temp">
+              28° C
+            </p>
+          </section>
+          <section className="monitor__day">
+            <p className="day__name">wed</p>
+            <div className="day__weather">
+              <WiSnowWind />
+            </div>
+            <p className="day__temp">
+              -10° C
+            </p>
+          </section>
+          <section className="monitor__day">
+            <p className="day__name">thu</p>
+            <div className="day__weather">
+              <WiNightRain />
+            </div>
+            <p className="day__temp">
+              18° C
+            </p>
+          </section>
+          <section className="monitor__day">
+            <p className="day__name">fri</p>
+            <div className="day__weather">
+              <WiTornado />
+            </div>
+            <p className="day__temp">
+              12° C
+            </p>
+          </section>
+          <section className="monitor__day">
+          <p className="day__name">sat</p>
+          <div className="day__weather">
+              <WiCloudy />
+            </div>
+            <p className="day__temp">
+              22° C
+            </p>
+          </section>
+          <section className="monitor__day">
+            <p className="day__name">sun</p>
+            <div className="day__weather">
+              <WiDayCloudyGusts />
+            </div>
+            <p className="day__temp">
+              23° C
+            </p>
+          </section>
+        </main>
+      </div>
+    );
 }
 
 export default App;
