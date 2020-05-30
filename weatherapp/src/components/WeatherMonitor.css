@@ -1,0 +1,10 @@
+.App__monitor{
+    width: 903px;
+    height: 400px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px  solid #d6ffff;
+    flex-wrap: wrap;
+    
+  }
