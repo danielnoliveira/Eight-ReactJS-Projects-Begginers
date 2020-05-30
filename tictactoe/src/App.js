@@ -1,4 +1,7 @@
 import React,{useState} from 'react';
+import Header from './components/Header.js';
+import Result from './components/Result.js';
+import Turn from './components/Turn.js';
 import './App.css';
 const results = [
   [[0,0],[0,1],[0,2]],
@@ -39,14 +42,8 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App__header">
-        <h1 className="header__title">tic tac toe</h1>
-      </header>
-      <div className="App__turn">
-        <h2 className="turn__text">
-          Turn:{turn?'X':'O'}
-        </h2>
-      </div>
+      <Header title="tic tac toe"/>
+      <Turn turn={turn}/>
       <main className="App__board">
         <button onClick={()=>fillSquare(turn,0,0)} className="board__square">{board[0][0]}</button>
         <button onClick={()=>fillSquare(turn,0,1)} className="board__square">{board[0][1]}</button>
@@ -58,11 +55,7 @@ function App() {
         <button onClick={()=>fillSquare(turn,2,1)} className="board__square">{board[2][1]}</button>
         <button onClick={()=>fillSquare(turn,2,2)} className="board__square">{board[2][2]}</button>
       </main>
-      <div className="App__result">
-        <h2 className="result__text">
-          {winner?'Ganhador: '+(turn?'O':'X'):''}
-        </h2>
-      </div>
+      <Result turn={turn} winner={winner}/>
     </div>
   );
 }
