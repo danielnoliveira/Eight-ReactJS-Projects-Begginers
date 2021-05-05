@@ -21,5 +21,5 @@ Repository to store my applications made in beginner level React JS.
     - Netlifly Link:https://angry-payne-3a644e.netlify.app
 - [Form Validation](https://github.com/danielnoliveira/Eight-ReactJS-Projects-Begginers/tree/master/formvalidation):heavy_check_mark:
     - Netlifly Link: https://nervous-villani-5cc731.netlify.app/
-- [Weather App](https://github.com/danielnoliveira/Eight-ReactJS-Projects-Begginers/tree/master/weatherapp)
+- [Weather App](https://github.com/danielnoliveira/Eight-ReactJS-Projects-Begginers/tree/master/weatherapp) :heavy_check_mark:
     - Netlifly Link: https://thirsty-yalow-e9d8c1.netlify.app
